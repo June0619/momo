@@ -1,23 +1,20 @@
 package com.momo.member;
 
-import jakarta.persistence.Column;
-import jakarta.persistence.Entity;
-import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.Id;
+import com.momo.BaseEntity;
+import jakarta.persistence.*;
 
 @Entity
-public class Member {
+@Table(name = "MEMBER", uniqueConstraints = {@UniqueConstraint(columnNames = "EMAIL")}, indexes = {@Index(columnList = "EMAIL")})
+public class Member extends BaseEntity {
 
     @Id
     @GeneratedValue
     private Long id;
 
-    @Column(name = "USER_ID", length = 20, nullable = false)
-    private String userId;
+    @Column(name = "EMAIL", length = 50, nullable = false)
+    private String email;
 
     @Column(name = "PASSWORD", length = 30, nullable = false)
     private String password;
 
-    @Column(name = "EMAIL", length = 50, nullable = false)
-    private String email;
 }
