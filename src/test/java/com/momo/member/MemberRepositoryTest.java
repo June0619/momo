@@ -1,5 +1,7 @@
 package com.momo.member;
 
+import com.momo.domain.member.Member;
+import com.momo.domain.member.MemberRepository;
 import com.momo.utils.ReflectionUtil;
 import org.assertj.core.api.Assertions;
 import org.junit.jupiter.api.Test;

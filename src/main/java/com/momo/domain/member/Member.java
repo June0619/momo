@@ -1,6 +1,6 @@
-package com.momo.member;
+package com.momo.domain.member;
 
-import com.momo.BaseEntity;
+import com.momo.domain.BaseEntity;
 import jakarta.persistence.*;
 
 @Entity

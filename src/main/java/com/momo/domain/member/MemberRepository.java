@@ -1,4 +1,4 @@
-package com.momo.member;
+package com.momo.domain.member;
 
 import org.springframework.data.jpa.repository.JpaRepository;
 
